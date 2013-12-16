@@ -1,5 +1,5 @@
 //
-//  JCViewController.h
+//  JCTSectorViewController.h
 //  X-Trading Partner
 //
 //  Created by Jonathan Carnie on 16/12/2013.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JCViewController : UIViewController
+@interface JCTSectorViewController : UITableViewController
+@property (nonatomic, strong) NSMutableArray *sectors;
 
 @end

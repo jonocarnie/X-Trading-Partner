@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Boron</key>
+	<array>
+		<string>Kingdom End</string>
+		<string>Rolk&apos;s Drift</string>
+		<string>Queen&apos;s Space</string>
+		<string>Menelaus&apos; Frontier</string>
+		<string>Rolk&apos;s Fate</string>
+		<string>Atreus&apos; Clouds</string>
+	</array>
+	<key>Argon</key>
+	<array>
+		<string>Three Worlds</string>
+		<string>Power Circle</string>
+		<string>Antigone Memorial</string>
+		<string>Cloudbase NorthWest</string>
+		<string>Heron&apos;s Nebula</string>
+		<string>The Hole</string>
+		<string>Ringo Moon</string>
+		<string>Argon Prime</string>
+		<string>The Wall</string>
+		<string>Red Light</string>
+		<string>Home of Light</string>
+		<string>President&apos;s End</string>
+		<string>Elena&apos;s Fortune</string>
+		<string>Cloudbase Southwest</string>
+		<string>Ore Belt</string>
+		<string>CloudBase SouthEast</string>
+	</array>
+</dict>
+</plist>

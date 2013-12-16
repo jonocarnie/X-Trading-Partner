@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Race</key>
+	<array>
+		<string>Argon</string>
+		<string>Boron</string>
+		<string>Split</string>
+		<string>Teladi</string>
+		<string>Terran</string>
+		<string>Pirates</string>
+		<string>Yaki</string>
+		<string>Xenon</string>
+		<string>Goner</string>
+		<string>Kha&apos;ak</string>
+		<string>Unknown</string>
+	</array>
+</dict>
+</plist>

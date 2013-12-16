@@ -14,13 +14,16 @@
 		FB9A4491185ED5D300FD7CF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9A4490185ED5D300FD7CF8 /* main.m */; };
 		FB9A4495185ED5D300FD7CF8 /* JCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9A4494185ED5D300FD7CF8 /* JCAppDelegate.m */; };
 		FB9A4498185ED5D300FD7CF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9A4496185ED5D300FD7CF8 /* Main.storyboard */; };
-		FB9A449B185ED5D300FD7CF8 /* JCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9A449A185ED5D300FD7CF8 /* JCViewController.m */; };
 		FB9A449D185ED5D300FD7CF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9A449C185ED5D300FD7CF8 /* Images.xcassets */; };
 		FB9A44A4185ED5D300FD7CF8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9A44A3185ED5D300FD7CF8 /* XCTest.framework */; };
 		FB9A44A5185ED5D300FD7CF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9A4484185ED5D300FD7CF8 /* Foundation.framework */; };
 		FB9A44A6185ED5D300FD7CF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9A4488185ED5D300FD7CF8 /* UIKit.framework */; };
 		FB9A44AE185ED5D300FD7CF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB9A44AC185ED5D300FD7CF8 /* InfoPlist.strings */; };
 		FB9A44B0185ED5D300FD7CF8 /* X_Trading_PartnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9A44AF185ED5D300FD7CF8 /* X_Trading_PartnerTests.m */; };
+		FB9A44BB185ED64100FD7CF8 /* JCTSectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9A44BA185ED64100FD7CF8 /* JCTSectorViewController.m */; };
+		FB9A44BE185EE56D00FD7CF8 /* Sector.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9A44BD185EE56D00FD7CF8 /* Sector.m */; };
+		FB9A44C0185EE73900FD7CF8 /* Sectors.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB9A44BF185EE73900FD7CF8 /* Sectors.plist */; };
+		FB9A44C2185EE9A000FD7CF8 /* Races.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB9A44C1185EE9A000FD7CF8 /* Races.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +48,18 @@
 		FB9A4493185ED5D300FD7CF8 /* JCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAppDelegate.h; sourceTree = "<group>"; };
 		FB9A4494185ED5D300FD7CF8 /* JCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAppDelegate.m; sourceTree = "<group>"; };
 		FB9A4497185ED5D300FD7CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FB9A4499185ED5D300FD7CF8 /* JCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCViewController.h; sourceTree = "<group>"; };
-		FB9A449A185ED5D300FD7CF8 /* JCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCViewController.m; sourceTree = "<group>"; };
 		FB9A449C185ED5D300FD7CF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FB9A44A2185ED5D300FD7CF8 /* X-Trading PartnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "X-Trading PartnerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9A44A3185ED5D300FD7CF8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FB9A44AB185ED5D300FD7CF8 /* X-Trading PartnerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "X-Trading PartnerTests-Info.plist"; sourceTree = "<group>"; };
 		FB9A44AD185ED5D300FD7CF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FB9A44AF185ED5D300FD7CF8 /* X_Trading_PartnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = X_Trading_PartnerTests.m; sourceTree = "<group>"; };
+		FB9A44B9185ED64100FD7CF8 /* JCTSectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCTSectorViewController.h; sourceTree = "<group>"; };
+		FB9A44BA185ED64100FD7CF8 /* JCTSectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCTSectorViewController.m; sourceTree = "<group>"; };
+		FB9A44BC185EE56D00FD7CF8 /* Sector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sector.h; sourceTree = "<group>"; };
+		FB9A44BD185EE56D00FD7CF8 /* Sector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sector.m; sourceTree = "<group>"; };
+		FB9A44BF185EE73900FD7CF8 /* Sectors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Sectors.plist; sourceTree = "<group>"; };
+		FB9A44C1185EE9A000FD7CF8 /* Races.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Races.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +122,14 @@
 				FB9A4493185ED5D300FD7CF8 /* JCAppDelegate.h */,
 				FB9A4494185ED5D300FD7CF8 /* JCAppDelegate.m */,
 				FB9A4496185ED5D300FD7CF8 /* Main.storyboard */,
-				FB9A4499185ED5D300FD7CF8 /* JCViewController.h */,
-				FB9A449A185ED5D300FD7CF8 /* JCViewController.m */,
 				FB9A449C185ED5D300FD7CF8 /* Images.xcassets */,
 				FB9A448B185ED5D300FD7CF8 /* Supporting Files */,
+				FB9A44B9185ED64100FD7CF8 /* JCTSectorViewController.h */,
+				FB9A44BA185ED64100FD7CF8 /* JCTSectorViewController.m */,
+				FB9A44BC185EE56D00FD7CF8 /* Sector.h */,
+				FB9A44BD185EE56D00FD7CF8 /* Sector.m */,
+				FB9A44BF185EE73900FD7CF8 /* Sectors.plist */,
+				FB9A44C1185EE9A000FD7CF8 /* Races.plist */,
 			);
 			path = "X-Trading Partner";
 			sourceTree = "<group>";
@@ -231,6 +242,8 @@
 			files = (
 				FB9A449D185ED5D300FD7CF8 /* Images.xcassets in Resources */,
 				FB9A448F185ED5D300FD7CF8 /* InfoPlist.strings in Resources */,
+				FB9A44C2185EE9A000FD7CF8 /* Races.plist in Resources */,
+				FB9A44C0185EE73900FD7CF8 /* Sectors.plist in Resources */,
 				FB9A4498185ED5D300FD7CF8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,9 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9A44BB185ED64100FD7CF8 /* JCTSectorViewController.m in Sources */,
 				FB9A4491185ED5D300FD7CF8 /* main.m in Sources */,
-				FB9A449B185ED5D300FD7CF8 /* JCViewController.m in Sources */,
 				FB9A4495185ED5D300FD7CF8 /* JCAppDelegate.m in Sources */,
+				FB9A44BE185EE56D00FD7CF8 /* Sector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +399,7 @@
 				GCC_PREFIX_HEADER = "X-Trading Partner/X-Trading Partner-Prefix.pch";
 				INFOPLIST_FILE = "X-Trading Partner/X-Trading Partner-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -398,6 +413,7 @@
 				GCC_PREFIX_HEADER = "X-Trading Partner/X-Trading Partner-Prefix.pch";
 				INFOPLIST_FILE = "X-Trading Partner/X-Trading Partner-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
