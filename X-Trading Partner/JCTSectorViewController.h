@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface JCTSectorViewController : UITableViewController
-@property (nonatomic, strong) NSArray *sectorKeys;
-@property (nonatomic, strong) NSArray *sectorValues;
+
+@property (nonatomic, strong) NSMutableArray *sectors;
 
 @end

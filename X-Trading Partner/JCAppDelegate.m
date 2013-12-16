@@ -11,13 +11,44 @@
 #import "JCTSectorViewController.h"
 
 @implementation JCAppDelegate
-
+{
+    NSMutableArray *_sectors;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Sectors" ofType:@"plist"];
+    NSLog(@"Path %@",path);
+    
+    NSDictionary *tempDict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    
+    _sectors = [NSMutableArray arrayWithCapacity:25];
+    
+    NSArray *fullList = [tempDict allKeys];
+    
+    for (NSString *race in fullList) {
+        
+        NSLog(@"Race: %@", race);
+        self.sectorValues = tempDict[race];
+        
+        Sector *sector = [[Sector alloc]init];
+        
+        for (NSString *tmpsectorName in self.sectorValues) {
+            NSLog(@"name: %@", tmpsectorName);
+            NSLog(@"race: %@", race);
+            
+            sector.sectorName = tmpsectorName;
+            sector.race = race;
+            NSLog(@"Sector info: %@",sector);
+            [_sectors addObject:sector];
+            sector =[[Sector alloc] init];
+
+        }
+    }
+    
     // Override point for customization after application launch.
-//    _sectors = [NSMutableArray arrayWithCapacity:20];
+   // _sectors = [NSMutableArray arrayWithCapacity:20];
 //    Sector *sector =[[Sector alloc] init];
 //    sector.sectorName = @"Kingdom's End";
 //    sector.race = @"Boron";
@@ -48,10 +79,10 @@
 //    
 //    [_sectors addObject:sector];
 //
-//    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-//    JCTSectorViewController *sectorViewController = [navigationController viewControllers][0];
-//    sectorViewController.sectors = _sectors;
-//    
+    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    JCTSectorViewController *sectorViewController = [navigationController viewControllers][0];
+    sectorViewController.sectors = _sectors;
+   
     
     
     

@@ -10,6 +10,9 @@
 
 @interface JCAppDelegate : UIResponder <UIApplicationDelegate>
 
+@property (nonatomic, strong) NSArray *sectorKeys;
+@property (nonatomic, strong) NSArray *sectorValues;
+
 @property (strong, nonatomic) UIWindow *window;
 
 @end
