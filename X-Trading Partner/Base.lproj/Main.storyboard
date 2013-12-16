@@ -8,27 +8,27 @@
         <scene sceneID="9bG-LH-zHY">
             <objects>
                 <tableViewController id="hGu-xD-Qh6" customClass="JCTSectorViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="iYK-hM-iId">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="iYK-hM-iId">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SectorNameCell" textLabel="Re1-yD-LZX" detailTextLabel="eJ7-bx-uI4" style="IBUITableViewCellStyleSubtitle" id="wbR-qG-8h3">
-                                <rect key="frame" x="0.0" y="86" width="768" height="60"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SectorNameCell" textLabel="Re1-yD-LZX" detailTextLabel="eJ7-bx-uI4" style="IBUITableViewCellStyleSubtitle" id="wbR-qG-8h3">
+                                <rect key="frame" x="0.0" y="119" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wbR-qG-8h3" id="h0y-08-wzh">
-                                    <rect key="frame" x="0.0" y="0.0" width="721" height="59"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Re1-yD-LZX">
-                                            <rect key="frame" x="15" y="11" width="34" height="22"/>
+                                            <rect key="frame" x="15" y="3" width="34" height="22"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eJ7-bx-uI4">
-                                            <rect key="frame" x="15" y="33" width="43" height="15"/>
+                                            <rect key="frame" x="15" y="25" width="43" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -37,7 +37,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="25D-yC-x7L" kind="modal" trigger="accessoryAction" id="yxm-NX-kjm"/>
+                                    <segue destination="25D-yC-x7L" kind="modal" id="TsZ-Ra-am9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="447" y="376"/>
         </scene>
-        <!--Table View Controller - Sector Info-->
+        <!--Sector Detail View Controller - Sector Info-->
         <scene sceneID="Dcf-v2-1tN">
             <objects>
-                <tableViewController id="zAz-Z8-TTK" sceneMemberID="viewController">
+                <tableViewController id="zAz-Z8-TTK" customClass="JCSectorDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="92V-Cy-X1i">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,12 +71,23 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Sector Info" id="3sA-xv-qz5"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Sector Info" id="3sA-xv-qz5">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="moM-9q-fzn">
+                            <connections>
+                                <segue destination="aKr-fr-XwN" kind="unwind" unwindAction="unwindToSectorInfo:" id="9yF-UF-bvP"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="0Tw-FO-hYL"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UuJ-FE-MLl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="aKr-fr-XwN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2349" y="355"/>
+            <point key="canvasLocation" x="2413" y="376"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ek2-mt-eaA">
@@ -91,7 +102,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DSl-1K-WYC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1399" y="355"/>
+            <point key="canvasLocation" x="1423" y="376"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IgT-Fr-2UD">

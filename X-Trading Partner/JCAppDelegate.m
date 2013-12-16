@@ -12,49 +12,46 @@
 
 @implementation JCAppDelegate
 
-{
-    NSMutableArray *_sectors;
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
     // Override point for customization after application launch.
-    _sectors = [NSMutableArray arrayWithCapacity:20];
-    Sector *sector =[[Sector alloc] init];
-    sector.sectorName = @"Kingdom's End";
-    sector.race = @"Boron";
-    
-    [_sectors addObject:sector];
-    
-    sector = [[Sector alloc]init];
-    sector.sectorName = @"Rolk's Drif";
-    sector.race = @"Boron";
-    
-    [_sectors addObject:sector];
-    
-    sector = [[Sector alloc]init];
-    sector.sectorName = @"Queen's Space";
-    sector.race = @"Boron";
-    
-    [_sectors addObject:sector];
-    
-    sector = [[Sector alloc]init];
-    sector.sectorName = @"Three Worlds";
-    sector.race = @"Argon";
-    
-    [_sectors addObject:sector];
-
-    sector = [[Sector alloc]init];
-    sector.sectorName = @"Power Circle";
-    sector.race = @"Argon";
-    
-    [_sectors addObject:sector];
-
-    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    JCTSectorViewController *sectorViewController = [navigationController viewControllers][0];
-    sectorViewController.sectors = _sectors;
-    
+//    _sectors = [NSMutableArray arrayWithCapacity:20];
+//    Sector *sector =[[Sector alloc] init];
+//    sector.sectorName = @"Kingdom's End";
+//    sector.race = @"Boron";
+//    
+//    [_sectors addObject:sector];
+//    
+//    sector = [[Sector alloc]init];
+//    sector.sectorName = @"Rolk's Drif";
+//    sector.race = @"Boron";
+//    
+//    [_sectors addObject:sector];
+//    
+//    sector = [[Sector alloc]init];
+//    sector.sectorName = @"Queen's Space";
+//    sector.race = @"Boron";
+//    
+//    [_sectors addObject:sector];
+//    
+//    sector = [[Sector alloc]init];
+//    sector.sectorName = @"Three Worlds";
+//    sector.race = @"Argon";
+//    
+//    [_sectors addObject:sector];
+//
+//    sector = [[Sector alloc]init];
+//    sector.sectorName = @"Power Circle";
+//    sector.race = @"Argon";
+//    
+//    [_sectors addObject:sector];
+//
+//    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+//    JCTSectorViewController *sectorViewController = [navigationController viewControllers][0];
+//    sectorViewController.sectors = _sectors;
+//    
     
     
     

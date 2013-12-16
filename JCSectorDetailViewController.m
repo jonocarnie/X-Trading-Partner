@@ -1,29 +1,23 @@
 //
-//  JCTSectorViewController.m
+//  JCSectorDetailViewController.m
 //  X-Trading Partner
 //
 //  Created by Jonathan Carnie on 16/12/2013.
 //  Copyright (c) 2013 Jonathan Carnie. All rights reserved.
 //
 
-#import "JCTSectorViewController.h"
-#import "Sector.h"
+#import "JCSectorDetailViewController.h"
 
-@interface JCTSectorViewController ()
+@interface JCSectorDetailViewController ()
 
 @end
 
-@implementation JCTSectorViewController
+@implementation JCSectorDetailViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
-        
-        // load up the plist data here
-     
-        
-        
         // Custom initialization
     }
     return self;
@@ -38,21 +32,6 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
- //   NSArray *keys = [dictionary allKeys];
- //   NSArray *values = [dictionary allValues];
-    
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Sectors" ofType:@"plist"];
-    NSLog(@"Path %@",path);
-    
-    NSDictionary *tempDict = [[NSDictionary alloc] initWithContentsOfFile:path];
-//    NSLog(@"Dict contains %@", tempDict);
-
-    self.sectorKeys = [tempDict allKeys];
-    self.sectorValues = [tempDict allValues];
-    NSLog(@"Sectors contained %@", self.sectorKeys);
-    NSLog(@"Sectors in array: %@", self.sectorValues);
-
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,37 +44,28 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return [self.sectorKeys count];
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.sectorValues count];
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SectorNameCell"];
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    Sector *sector =[[Sector alloc] init];
-    sector.sectorName = (self.sectorKeys)[indexPath.row];
-  //  sector.race = @"Boron";
-    //
+    // Configure the cell...
     
- //   Sector *sector = (self.sectorKeys)[indexPath.row];
-    cell.textLabel.text = sector.sectorName;
-//    cell.detailTextLabel.text = sector.race;
-//    
     return cell;
 }
 
-
-#pragma Mark - Unwind Segue
--(IBAction)unwindToSectorInfo:(UIStoryboardSegue*)unwindSegue
-{
-    
-}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
