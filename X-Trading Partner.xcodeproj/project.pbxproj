@@ -25,6 +25,8 @@
 		FB9A44C0185EE73900FD7CF8 /* Sectors.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB9A44BF185EE73900FD7CF8 /* Sectors.plist */; };
 		FB9A44C2185EE9A000FD7CF8 /* Races.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB9A44C1185EE9A000FD7CF8 /* Races.plist */; };
 		FB9A44CB185F0A2400FD7CF8 /* JCSectorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9A44CA185F0A2400FD7CF8 /* JCSectorDetailViewController.m */; };
+		FBAAD12D186167DB00A7A015 /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAAD12C186167DB00A7A015 /* Station.m */; };
+		FBAAD13018618EE500A7A015 /* JCNewStationDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAAD12F18618EE500A7A015 /* JCNewStationDetailsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,10 @@
 		FB9A44C1185EE9A000FD7CF8 /* Races.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Races.plist; sourceTree = "<group>"; };
 		FB9A44C9185F0A2400FD7CF8 /* JCSectorDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCSectorDetailViewController.h; path = ../JCSectorDetailViewController.h; sourceTree = "<group>"; };
 		FB9A44CA185F0A2400FD7CF8 /* JCSectorDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCSectorDetailViewController.m; path = ../JCSectorDetailViewController.m; sourceTree = "<group>"; };
+		FBAAD12B186167DB00A7A015 /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
+		FBAAD12C186167DB00A7A015 /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
+		FBAAD12E18618EE500A7A015 /* JCNewStationDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCNewStationDetailsTableViewController.h; sourceTree = "<group>"; };
+		FBAAD12F18618EE500A7A015 /* JCNewStationDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCNewStationDetailsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,8 @@
 				FB9A44CA185F0A2400FD7CF8 /* JCSectorDetailViewController.m */,
 				FB9A44B9185ED64100FD7CF8 /* JCTSectorViewController.h */,
 				FB9A44BA185ED64100FD7CF8 /* JCTSectorViewController.m */,
+				FBAAD12E18618EE500A7A015 /* JCNewStationDetailsTableViewController.h */,
+				FBAAD12F18618EE500A7A015 /* JCNewStationDetailsTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -188,6 +196,8 @@
 			children = (
 				FB9A44BC185EE56D00FD7CF8 /* Sector.h */,
 				FB9A44BD185EE56D00FD7CF8 /* Sector.m */,
+				FBAAD12B186167DB00A7A015 /* Station.h */,
+				FBAAD12C186167DB00A7A015 /* Station.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -293,7 +303,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB9A44CB185F0A2400FD7CF8 /* JCSectorDetailViewController.m in Sources */,
+				FBAAD13018618EE500A7A015 /* JCNewStationDetailsTableViewController.m in Sources */,
 				FB9A44BB185ED64100FD7CF8 /* JCTSectorViewController.m in Sources */,
+				FBAAD12D186167DB00A7A015 /* Station.m in Sources */,
 				FB9A4491185ED5D300FD7CF8 /* main.m in Sources */,
 				FB9A4495185ED5D300FD7CF8 /* JCAppDelegate.m in Sources */,
 				FB9A44BE185EE56D00FD7CF8 /* Sector.m in Sources */,
