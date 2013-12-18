@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Station.h"
 
 @interface JCSectorDetailViewController : UITableViewController
-
-- (IBAction)addStation;
 
 @end
