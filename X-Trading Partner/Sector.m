@@ -10,4 +10,9 @@
 
 @implementation Sector
 
+-(NSString *)description
+{
+    return [NSString stringWithFormat:@"<Sector info:> Sector name %@, Owning Race %@, Stations present %@", self.sectorName, self.race, self.stations];
+}
+
 @end
