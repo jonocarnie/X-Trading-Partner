@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A3017" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="Ehp-Wf-3bn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C68m" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="Ehp-Wf-3bn">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Sector View Controller - Sectors-->
+        <!--Sectors-->
         <scene sceneID="9bG-LH-zHY">
             <objects>
                 <tableViewController id="hGu-xD-Qh6" customClass="JCTSectorViewController" sceneMemberID="viewController">
@@ -53,7 +54,7 @@
             </objects>
             <point key="canvasLocation" x="-1961" y="572"/>
         </scene>
-        <!--Sector Detail View Controller - Sector Info-->
+        <!--Sector Info-->
         <scene sceneID="Dcf-v2-1tN">
             <objects>
                 <tableViewController id="zAz-Z8-TTK" customClass="JCSectorDetailViewController" sceneMemberID="viewController">
@@ -93,7 +94,7 @@
             </objects>
             <point key="canvasLocation" x="-1069" y="572"/>
         </scene>
-        <!--New Station Details Table View Controller - Add Station Details-->
+        <!--New Station Details Table View Controller-->
         <scene sceneID="hol-te-TxV">
             <objects>
                 <tableViewController id="nec-x1-vEh" customClass="JCNewStationDetailsTableViewController" sceneMemberID="viewController">
@@ -152,13 +153,13 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Add Station Details" id="iu0-Wo-23z">
+                    <navigationItem key="navigationItem" id="iu0-Wo-23z">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="K7x-u5-S9g">
                             <connections>
                                 <action selector="cancel" destination="nec-x1-vEh" id="oac-vT-YVZ"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="done" id="R1I-YC-aaz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="R1I-YC-aaz">
                             <connections>
                                 <action selector="done" destination="nec-x1-vEh" id="YsN-Y4-DYm"/>
                             </connections>

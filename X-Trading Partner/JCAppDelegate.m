@@ -29,18 +29,18 @@
     
     for (NSString *race in fullList) {
         
-   //     NSLog(@"Race: %@", race);
+        NSLog(@"Race: %@", race);
         self.sectorValues = tempDict[race];
         
         Sector *sector = [[Sector alloc]init];
         
         for (NSString *tmpsectorName in self.sectorValues) {
-//            NSLog(@"name: %@", tmpsectorName);
-//            NSLog(@"race: %@", race);
+            NSLog(@"name: %@", tmpsectorName);
+  //          NSLog(@"race: %@", race);
 //            
             sector.sectorName = tmpsectorName;
             sector.race = race;
- //           NSLog(@"%@",sector);
+            NSLog(@"%@",sector);
             [_sectors addObject:sector];
             sector =[[Sector alloc] init];
 

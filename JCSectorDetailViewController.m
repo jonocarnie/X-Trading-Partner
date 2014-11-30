@@ -93,7 +93,7 @@
 
     NSLog(@"Array now has a %@",newStation);
 
-    NSLog(@"New count of the array  %ld", [_stations count]);
+    NSLog(@"New count of the array  %ld", (unsigned long)[_stations count]);
     
     NSLog(@"Contents of the array: %@", _stations);
 
