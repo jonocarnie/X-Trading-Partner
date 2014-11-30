@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E372D9CF1A2AC697003DF1C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372D9CE1A2AC697003DF1C2 /* AppDelegate.swift */; };
+		E372D9D11A2AC843003DF1C2 /* JCSectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372D9D01A2AC843003DF1C2 /* JCSectorViewController.swift */; };
+		E372D9D31A2AC868003DF1C2 /* JCSectorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372D9D21A2AC868003DF1C2 /* JCSectorDetailViewController.swift */; };
+		E372D9D51A2ACC3F003DF1C2 /* JCSector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372D9D41A2ACC3F003DF1C2 /* JCSector.swift */; };
+		E372D9D71A2ACC53003DF1C2 /* JCStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372D9D61A2ACC53003DF1C2 /* JCStation.swift */; };
 		FB9A4485185ED5D300FD7CF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9A4484185ED5D300FD7CF8 /* Foundation.framework */; };
 		FB9A4487185ED5D300FD7CF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9A4486185ED5D300FD7CF8 /* CoreGraphics.framework */; };
 		FB9A4489185ED5D300FD7CF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9A4488185ED5D300FD7CF8 /* UIKit.framework */; };
 		FB9A448F185ED5D300FD7CF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB9A448D185ED5D300FD7CF8 /* InfoPlist.strings */; };
-		FB9A4491185ED5D300FD7CF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9A4490185ED5D300FD7CF8 /* main.m */; };
-		FB9A4495185ED5D300FD7CF8 /* JCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9A4494185ED5D300FD7CF8 /* JCAppDelegate.m */; };
 		FB9A4498185ED5D300FD7CF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9A4496185ED5D300FD7CF8 /* Main.storyboard */; };
 		FB9A449D185ED5D300FD7CF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9A449C185ED5D300FD7CF8 /* Images.xcassets */; };
 		FB9A44A4185ED5D300FD7CF8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9A44A3185ED5D300FD7CF8 /* XCTest.framework */; };
@@ -20,13 +23,10 @@
 		FB9A44A6185ED5D300FD7CF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9A4488185ED5D300FD7CF8 /* UIKit.framework */; };
 		FB9A44AE185ED5D300FD7CF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB9A44AC185ED5D300FD7CF8 /* InfoPlist.strings */; };
 		FB9A44B0185ED5D300FD7CF8 /* X_Trading_PartnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9A44AF185ED5D300FD7CF8 /* X_Trading_PartnerTests.m */; };
-		FB9A44BB185ED64100FD7CF8 /* JCTSectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9A44BA185ED64100FD7CF8 /* JCTSectorViewController.m */; };
 		FB9A44BE185EE56D00FD7CF8 /* Sector.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9A44BD185EE56D00FD7CF8 /* Sector.m */; };
 		FB9A44C0185EE73900FD7CF8 /* Sectors.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB9A44BF185EE73900FD7CF8 /* Sectors.plist */; };
 		FB9A44C2185EE9A000FD7CF8 /* Races.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB9A44C1185EE9A000FD7CF8 /* Races.plist */; };
-		FB9A44CB185F0A2400FD7CF8 /* JCSectorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9A44CA185F0A2400FD7CF8 /* JCSectorDetailViewController.m */; };
 		FBAAD12D186167DB00A7A015 /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAAD12C186167DB00A7A015 /* Station.m */; };
-		FBAAD13018618EE500A7A015 /* JCNewStationDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAAD12F18618EE500A7A015 /* JCNewStationDetailsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,16 +40,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E372D9CE1A2AC697003DF1C2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E372D9D01A2AC843003DF1C2 /* JCSectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JCSectorViewController.swift; path = ../JCSectorViewController.swift; sourceTree = "<group>"; };
+		E372D9D21A2AC868003DF1C2 /* JCSectorDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JCSectorDetailViewController.swift; path = ../JCSectorDetailViewController.swift; sourceTree = "<group>"; };
+		E372D9D41A2ACC3F003DF1C2 /* JCSector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCSector.swift; sourceTree = "<group>"; };
+		E372D9D61A2ACC53003DF1C2 /* JCStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCStation.swift; sourceTree = "<group>"; };
 		FB9A4481185ED5D300FD7CF8 /* X-Trading Partner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "X-Trading Partner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9A4484185ED5D300FD7CF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FB9A4486185ED5D300FD7CF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		FB9A4488185ED5D300FD7CF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FB9A448C185ED5D300FD7CF8 /* X-Trading Partner-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "X-Trading Partner-Info.plist"; sourceTree = "<group>"; };
 		FB9A448E185ED5D300FD7CF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FB9A4490185ED5D300FD7CF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB9A4492185ED5D300FD7CF8 /* X-Trading Partner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "X-Trading Partner-Prefix.pch"; sourceTree = "<group>"; };
-		FB9A4493185ED5D300FD7CF8 /* JCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAppDelegate.h; sourceTree = "<group>"; };
-		FB9A4494185ED5D300FD7CF8 /* JCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAppDelegate.m; sourceTree = "<group>"; };
 		FB9A4497185ED5D300FD7CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB9A449C185ED5D300FD7CF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FB9A44A2185ED5D300FD7CF8 /* X-Trading PartnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "X-Trading PartnerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,18 +59,12 @@
 		FB9A44AB185ED5D300FD7CF8 /* X-Trading PartnerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "X-Trading PartnerTests-Info.plist"; sourceTree = "<group>"; };
 		FB9A44AD185ED5D300FD7CF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FB9A44AF185ED5D300FD7CF8 /* X_Trading_PartnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = X_Trading_PartnerTests.m; sourceTree = "<group>"; };
-		FB9A44B9185ED64100FD7CF8 /* JCTSectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCTSectorViewController.h; sourceTree = "<group>"; };
-		FB9A44BA185ED64100FD7CF8 /* JCTSectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCTSectorViewController.m; sourceTree = "<group>"; };
 		FB9A44BC185EE56D00FD7CF8 /* Sector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sector.h; sourceTree = "<group>"; };
 		FB9A44BD185EE56D00FD7CF8 /* Sector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sector.m; sourceTree = "<group>"; };
 		FB9A44BF185EE73900FD7CF8 /* Sectors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Sectors.plist; sourceTree = "<group>"; };
 		FB9A44C1185EE9A000FD7CF8 /* Races.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Races.plist; sourceTree = "<group>"; };
-		FB9A44C9185F0A2400FD7CF8 /* JCSectorDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCSectorDetailViewController.h; path = ../JCSectorDetailViewController.h; sourceTree = "<group>"; };
-		FB9A44CA185F0A2400FD7CF8 /* JCSectorDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCSectorDetailViewController.m; path = ../JCSectorDetailViewController.m; sourceTree = "<group>"; };
 		FBAAD12B186167DB00A7A015 /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
 		FBAAD12C186167DB00A7A015 /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
-		FBAAD12E18618EE500A7A015 /* JCNewStationDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCNewStationDetailsTableViewController.h; sourceTree = "<group>"; };
-		FBAAD12F18618EE500A7A015 /* JCNewStationDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCNewStationDetailsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +91,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E372D9CD1A2AC65A003DF1C2 /* Swift-Converted */ = {
+			isa = PBXGroup;
+			children = (
+				E372D9CE1A2AC697003DF1C2 /* AppDelegate.swift */,
+				E372D9D41A2ACC3F003DF1C2 /* JCSector.swift */,
+				E372D9D61A2ACC53003DF1C2 /* JCStation.swift */,
+			);
+			name = "Swift-Converted";
+			sourceTree = "<group>";
+		};
 		FB9A4478185ED5D300FD7CF8 = {
 			isa = PBXGroup;
 			children = (
+				E372D9CD1A2AC65A003DF1C2 /* Swift-Converted */,
 				FB9A448A185ED5D300FD7CF8 /* X-Trading Partner */,
 				FB9A44A9185ED5D300FD7CF8 /* X-Trading PartnerTests */,
 				FB9A4483185ED5D300FD7CF8 /* Frameworks */,
@@ -128,8 +135,6 @@
 		FB9A448A185ED5D300FD7CF8 /* X-Trading Partner */ = {
 			isa = PBXGroup;
 			children = (
-				FB9A4493185ED5D300FD7CF8 /* JCAppDelegate.h */,
-				FB9A4494185ED5D300FD7CF8 /* JCAppDelegate.m */,
 				FB9A4496185ED5D300FD7CF8 /* Main.storyboard */,
 				FB9A449C185ED5D300FD7CF8 /* Images.xcassets */,
 				FB9A448B185ED5D300FD7CF8 /* Supporting Files */,
@@ -145,7 +150,6 @@
 			children = (
 				FB9A448C185ED5D300FD7CF8 /* X-Trading Partner-Info.plist */,
 				FB9A448D185ED5D300FD7CF8 /* InfoPlist.strings */,
-				FB9A4490185ED5D300FD7CF8 /* main.m */,
 				FB9A4492185ED5D300FD7CF8 /* X-Trading Partner-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -172,12 +176,8 @@
 		FB9A44CC185F0A4900FD7CF8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FB9A44C9185F0A2400FD7CF8 /* JCSectorDetailViewController.h */,
-				FB9A44CA185F0A2400FD7CF8 /* JCSectorDetailViewController.m */,
-				FB9A44B9185ED64100FD7CF8 /* JCTSectorViewController.h */,
-				FB9A44BA185ED64100FD7CF8 /* JCTSectorViewController.m */,
-				FBAAD12E18618EE500A7A015 /* JCNewStationDetailsTableViewController.h */,
-				FBAAD12F18618EE500A7A015 /* JCNewStationDetailsTableViewController.m */,
+				E372D9D01A2AC843003DF1C2 /* JCSectorViewController.swift */,
+				E372D9D21A2AC868003DF1C2 /* JCSectorDetailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -302,12 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB9A44CB185F0A2400FD7CF8 /* JCSectorDetailViewController.m in Sources */,
-				FBAAD13018618EE500A7A015 /* JCNewStationDetailsTableViewController.m in Sources */,
-				FB9A44BB185ED64100FD7CF8 /* JCTSectorViewController.m in Sources */,
+				E372D9CF1A2AC697003DF1C2 /* AppDelegate.swift in Sources */,
+				E372D9D31A2AC868003DF1C2 /* JCSectorDetailViewController.swift in Sources */,
+				E372D9D11A2AC843003DF1C2 /* JCSectorViewController.swift in Sources */,
+				E372D9D51A2ACC3F003DF1C2 /* JCSector.swift in Sources */,
 				FBAAD12D186167DB00A7A015 /* Station.m in Sources */,
-				FB9A4491185ED5D300FD7CF8 /* main.m in Sources */,
-				FB9A4495185ED5D300FD7CF8 /* JCAppDelegate.m in Sources */,
+				E372D9D71A2ACC53003DF1C2 /* JCStation.swift in Sources */,
 				FB9A44BE185EE56D00FD7CF8 /* Sector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,10 +435,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "X-Trading Partner/X-Trading Partner-Prefix.pch";
 				INFOPLIST_FILE = "X-Trading Partner/X-Trading Partner-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -449,9 +452,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "X-Trading Partner/X-Trading Partner-Prefix.pch";
 				INFOPLIST_FILE = "X-Trading Partner/X-Trading Partner-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
